@@ -1,0 +1,12 @@
+
+#myMenuBar{
+    -fx-background-color: greenyellow;
+}
+#myAnchorPane{
+    -fx-background-image: url("food.jpg");
+    -fx-background-size: cover;
+}
+#myNewCAnchorPane{
+    -fx-background-image: url("newC.jpg");
+    -fx-background-size: cover;
+}
