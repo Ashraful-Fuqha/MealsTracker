@@ -20,8 +20,7 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
-        Image icon = new Image("icon.jpg");
-        primaryStage.getIcons().add(icon);
+        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.jpg")));
         primaryStage.setTitle("Meals-Tracker");
         primaryStage.setResizable(false);
         primaryStage.show();
