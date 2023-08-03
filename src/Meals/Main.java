@@ -3,6 +3,7 @@ package Meals;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,6 +20,9 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
+        Image icon = new Image("icon.jpg");
+        primaryStage.getIcons().add(icon);
+        primaryStage.setTitle("Meals-Tracker");
         primaryStage.setResizable(false);
         primaryStage.show();
     }
